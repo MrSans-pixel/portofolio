@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --clr: #7b7b7b;
+    --primer: #ffb742;
+    --second: #ccc;
+    --text: #fff;
+    --bg-clr: #212529;
+    --side-clr: #fb8c00;
+
+    --bg-tran: background-color 0.3s ease;
+    --clr-tran: color 0.3s ease;
+    --all-tran: all 0.3s ease;
+}
+
+body{
+    height: 100vh;
+    background: var(--bg-clr);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+}
+
+.navbar h2{
+    color: var(--primer);
+    font-weight: 600;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 16px;
+    margin-right: 25px;
+    transition: var(--clr-tran);
+}
+
+.navbar ul li:hover a{
+    color: var(--primer);
+}
+
+.navbar ul li:last-child a{
+    margin: 0;
+}
+
+.rekrut{
+    background: var(--primer);
+    padding: 6px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: var(--bg-tran);
+}
+
+.rekrut:hover{
+    background: var(--side-clr);
+}
+
+footer{
+    position: relative;
+    background: #1c1c1c;
+    padding: 80px 50px 40px;
+    margin-top: 100px;
+}
+
+footer .mulai{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background-color: var(--primer);
+    padding: 25px 20px;
+    border-radius: 15px;
+    width: 70%;
+    top: -16%;
+    left: 15%;
+}
+
+footer .mulai p{
+    font-size: 13px;
+    width: 35%;
+}
+
+footer .mulai button{
+    background: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 100px;
+    transition: var(--all-tran);
+}
+
+footer .mulai button:hover{
+    background-color: var(--text);
+    border-color: var(--text);
+}
+
+footer .cols{
+    display: flex;
+    align-items: start;
+}
+
+footer .cols .col-tentang{
+    flex: 3;
+}
+
+footer .cols .col-tentang h3{
+    color: var(--primer);
+    margin-bottom: 20px;
+}
+
+footer .cols .col-tentang p{
+    color: var(--second);
+    font-size: 13px;
+}
+
+footer .cols .col-link{
+    flex: 3;
+}
+
+footer .cols .col-link h4, footer .cols .col-notif h4{
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+footer .cols .col-link a{
+    display: block;
+    text-decoration: none;
+    color: var(--clr);
+    font-size: 14px;
+    line-height: 26px;
+    transition: var(--clr-tran);
+    margin: 3px;
+}
+
+footer .cols .col-link a:hover{
+    color: var(--primer);
+    cursor: pointer;
+}
+
+footer .cols .col-notif{
+    flex: 3;
+}
+
+footer .cols .col-notif p{
+    color: var(--clr);
+    font-size: 15px;
+}
+
+footer .cols .col-notif form{
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+footer .cols .col-notif form input{
+    width: 100%;
+    background: var(--bg-clr);
+    border: none;
+    padding: 13px;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+footer .cols .col-notif form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: var(--primer);
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: var(--bg-tran);
+}
+
+footer .cols .col-notif form button:hover{
+    background-color: var(--side-clr);
+}
+
+footer .cols .col-notif form button i{
+    font-size: 26px;
+}
+
+@media screen and (max-width: 1100px) {
+    footer{
+        margin-top: 150px;
+    }
+
+    footer .mulai{
+        width: 90%;
+        left: 5%;
+        top: -20%;
+    }
+
+    footer .cols{
+        flex-wrap: wrap;
+    }
+
+    footer .col-tentang{
+        flex-basis: 50%;
+    }
+    footer .col-link{
+        flex-basis: 50%;
+    }
+    footer .col-notif{
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .navbar button{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar{
+        justify-content: center;
+    }
+
+    .navbar h2{
+        display: none;
+    }
+
+    .navbar ul li a{
+        font-size: 14px;
+    }
+
+    footer .mulai{
+        top: -8%;
+    }
+
+    footer .mulai p{
+        display: none;
+    }
+
+    footer .cols .col-tentang{
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+
+    footer .cols .col-link{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer .cols .col-notif{
+        flex-basis: 100%;
+    }
+}

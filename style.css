@@ -99,12 +99,14 @@ body{
     font-size: 44px;
     font-weight: 600;
     color: var(--text);
+    text-align: center;
     margin-top: 8px;
 }
 
 .main p.desc{
     font-size: 16px;
     color: var(--second);
+    text-align: center;
     margin-top: 100px;
 }
 
@@ -289,7 +291,7 @@ footer .mulai{
     justify-content: space-around;
     position: absolute;
     background-color: var(--primer);
-    padding: 30px 25px;
+    padding: 25px 20px;
     border-radius: 15px;
     width: 70%;
     top: -16%;
@@ -507,7 +509,6 @@ footer .cols .col-notif form button i{
 
     .main p.keahlian{
         font-size: 28px;
-        text-align: center;
     }
 
     .main p.desc{
