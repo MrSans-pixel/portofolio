@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --warna-body: #18191a;
+    --warna-navbar: #242526;
+    --warna-primer: #e5e7eb;
+    --warna-sekunder: #212529;
+    --warna-toogle: #000;
+    --warna-teks-1: #ccc;
+    --warna-teks-2: #fff;
+    --warna-tombol: #000;
+    --warna-desc: #d1bcbc;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.main .foto-profile{
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    border-radius: 50%;
+    background: url("/images/anam.jpg");
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.03) perspective(200px);
+    cursor: pointer;
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.main .foto-profile:hover{
+    transform: scale(1.1) perspective(2500px) rotateY(5deg);
+}
+
+.Maintenance{
+    padding: 80px 60px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 36px;
+    margin-top: 36px;
+}
+
+.Maintenance h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--warna-primer);
+    text-align: center;
+}
+
+.Maintenance h1 span{
+    color: #fb8c00;
+}
+
+@media screen and (max-width: 1230px){
+    .Maintenance{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .Maintenance{
+        padding: 80px 30px 100px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main .foto-profile{
+        width: 250px;
+        height: 250px;
+    }
+
+    .Maintenance h1{
+        font-size: 24px;
+    }
+}

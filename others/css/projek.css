@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --warna-body: #18191a;
+    --warna-navbar: #242526;
+    --warna-primer: #e5e7eb;
+    --warna-sekunder: #212529;
+    --warna-toogle: #000;
+    --warna-teks-1: #ccc;
+    --warna-teks-2: #fff;
+    --warna-tombol: #000;
+    --warna-desc: #d1bcbc;
+}
+
+/* Projek */
+.projek{
+    padding: 80px 60px 100px;
+    background: var(--warna-sekunder);
+}
+
+.projek__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    margin-top: 36px;
+}
+
+.projek__header h3{
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--warna-primer);
+}
+
+.projek__header p{
+    font-size: 13px;
+    width: 50%;
+    margin: 0 20px;
+    padding: 5px 16px;
+    border-radius: 10px;
+    color: var(--warna-body);
+    background: var(--warna-primer);
+    border-color: var(--warna-primer);
+}
+
+.projek__list .kategori:first-child{
+    margin-bottom: 100px;
+}
+
+.kategori__projek{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.kartu-projek{
+    position: relative;
+    width: 25%;
+    height: 420px;
+    padding: 20px;
+    background: var(--warna-body);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.kartu-projek.soon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.kartu-projek__img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-position: top center;
+    border: 1px solid var(--warna-sekunder);
+    margin-bottom: 20px;
+}
+
+.kartu-projek__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.kartu-projek__info h5{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--warna-teks-2);
+}
+
+.kartu-projek__desc{
+    font-size: 13px;
+    color: var(--warna-desc);
+    margin-bottom: 30px;
+}
+
+.kartu-projek .btn{
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 8px 20px;
+    border-radius: 16px 0 10px 0;
+    border: none;
+    color: var(--warna-tombol);
+    background: var(--warna-primer);
+}
+
+.kartu-projek .btn:hover{
+    background: var(--warna-teks-2);
+}
+
+@media screen and (max-width: 1230px){
+    .kategori__projek{
+        flex-wrap: wrap;
+    }
+
+    .kartu-projek{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .projek{
+        padding: 80px 30px 100px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .projek__header h3{
+        font-size: 24px;
+    }
+
+    .kartu-projek{
+        width: 100%;
+        height: 500px;
+    }
+
+    .kartu-projek__img{
+        height: 300px;
+    }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>#47 - Encryptor Teks</title>
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Encryptor Teks MrSans</h1>
+        <label for="pesan">Pesan :</label>
+        <textarea id="pesan" rows="5" cols="50" placeholder="Masukkan pesan rahasiamu disini -_-"></textarea>
+        <label for="kunci">Kunci :</label>
+        <input type="text" id="kunci" placeholder="Beri kunci pesanmu (Opsional)" size="50">
+        <div class="tombol">
+            <button id="tmb-enc">Encrypt</button>
+            <button id="tmb-dec">Decrypt</button>
+        </div>
+
+        <h2>Hasil:</h2>
+        <div id="hasil"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --warna-body: #18191a;
+    --warna-navbar: #242526;
+    --warna-primer: #e5e7eb;
+    --warna-sekunder: #212529;
+    --warna-toogle: #000;
+    --warna-teks-1: #ccc;
+    --warna-teks-2: #fff;
+    --warna-tombol: #000;
+    --warna-desc: #d1bcbc;
+}
+
+.sertif{
+    padding: 80px 60px 100px;
+    background: var(--warna-sekunder);
+}
+
+.sertif__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    margin-top: 36px;
+}
+
+.sertif__header h3{
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--warna-primer);
+}
+
+.sertif__header p{
+    font-size: 13px;
+    width: 40%;
+    margin: 0 20px;
+    padding: 5px 16px;
+    border-radius: 10px;
+    color: var(--warna-body);
+    background: var(--warna-primer);
+    border-color: var(--warna-primer);
+}
+
+.sertif__list .kategori:first-child{
+    margin-bottom: 100px;
+}
+
+.kategori__sertif{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.kartu-sertif{
+    position: relative;
+    width: 25%;
+    height: 400px;
+    padding: 20px;
+    background: var(--warna-body);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.kartu-sertif__img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-position: top center;
+    border: 1px solid var(--warna-sekunder);
+    margin-bottom: 20px;
+}
+
+.kartu-sertif__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.kartu-sertif__info h5{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--warna-teks-2);
+    text-align: center;
+}
+
+.kartu-sertif__desc{
+    font-size: 13px;
+    color: var(--warna-desc);
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1230px){
+    .kategori__sertif{
+        flex-wrap: wrap;
+    }
+
+    .kartu-sertif{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .sertif{
+        padding: 80px 30px 100px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .sertif__header h3{
+        font-size: 24px;
+    }
+
+    .kartu-sertif{
+        width: 100%;
+        height: 500px;
+    }
+
+    .kartu-sertif__img{
+        height: 300px;
+    }
+}
