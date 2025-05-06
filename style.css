@@ -574,7 +574,14 @@ footer .cols .col-notif form button i{
         font-size: 10px;
     }
 
-    .main
+    .terjamin .item .ikon{
+        width: 36px;
+        height: 36px;
+    }
+
+    .terjamin .item .ikon i{
+        font-size: 24px;
+    }
 
     .terjamin .item .info h3{
         font-size: 20px;
