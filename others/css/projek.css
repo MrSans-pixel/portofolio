@@ -109,6 +109,17 @@
     margin-bottom: 30px;
 }
 
+.kartu-projek__comp{
+    position: absolute;
+    font-size: 13px;
+    color: var(--warna-desc);
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    padding: 15px 20px;
+}
+
 .kartu-projek .btn{
     cursor: pointer;
     position: absolute;
